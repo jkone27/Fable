@@ -34,6 +34,7 @@ Make sure the following **requirements** are installed in your system:
 - [Poetry](https://python-poetry.org/)
 - [Rust](https://www.rust-lang.org/tools/install)
 - [Dart](https://dart.dev/get-dart)
+- Java and Maven
 
 ### Build
 

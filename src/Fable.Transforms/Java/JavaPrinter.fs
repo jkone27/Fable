@@ -7,8 +7,9 @@ open Fable.Transforms.Printer
 
 // implement using eclipse JDT
 let run (writer: Writer) (compilationUnit: Java.CompilationUnit) : Async<unit> =
-    async {
-        // Use IKVM to write Java AST as output
+    async
+        {
+            // Use IKVM to write Java AST as output
         // Implement printing logic here
 
-    }
+        }
