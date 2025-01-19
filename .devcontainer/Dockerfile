@@ -109,6 +109,12 @@ RUN source .zshrc && dsm use $DART_VERSION
 RUN rm /home/vscode/install_dsm.sh
 RUN rm /home/vscode/install_dart.sh
 
+# Install Java
+RUN sudo apt-get install -y openjdk-21-jdk
+RUN echo "# Load java path" >> .zshrc
+RUN echo 'export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"' >> .zshrc
+RUN echo 'export PATH="$JAVA_HOME/bin:$PATH"' >> .zshrc
+
 # Force docker to load the zsh profile
 # This should be the last steps
 CMD [ "/bin/zsh" ]

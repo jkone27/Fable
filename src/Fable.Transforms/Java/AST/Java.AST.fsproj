@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Java.AST.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- enables to use maven packages via MavenReference in .NET projects -->
+    <PackageReference Include="IKVM.Maven.Sdk" Version="1.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- will make Eclipse JDT java ADT package types and namespaces available to this .net project -->
+    <MavenReference Include="org.eclipse.jdt:org.eclipse.jdt.core" Version="3.40.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,25 @@
+#r "nuget:Fable.Java"
+
+open Fable.Core
+open Fable.Core.Testing
+open Fable.Core.JavaInterop
+open Fable.Java.Builtins
+open System
+open System.Globalization
+
+let equal expected actual =
+    // According the console log arguments are reversed
+    Assert.AreEqual(actual, expected)
+
+[<EntryPoint>]
+let main argv =
+    let name = Array.tryHead argv |> Option.defaultValue "Guest"
+    printfn $"Hello {name}!"
+
+    // Open file with builtin `open`
+    // use file = builtins.``open``(StringPath "data.txt")
+    // file.read() |> printfn "File contents: %s"
+
+    printfn "All tests passed!"
+
+    0
