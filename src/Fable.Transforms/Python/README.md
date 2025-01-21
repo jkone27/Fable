@@ -35,8 +35,8 @@ Python source code.
 ## Numerics
 
 Currently, every number (`int`, `int32`, `int64`, bigint) will all be translated to Python `int`. Python ints are variable in
-length and there is no unsigned alternative. For more information see https://docs.python.org/3.9/library/stdtypes.html
-and https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/basic-types.
+length and there is no unsigned alternative. For more information see <https://docs.python.org/3.9/library/stdtypes.html>
+and <https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/basic-types>.
 
 | F#               | .NET    | Python |
 |:-----------------|:--------|--------|
@@ -81,7 +81,7 @@ expressions. You cannot assign to e.g. an object property.
 ## Type Annotations
 
 The generated Python code is now with type annotation. Python types and F# types are not fully compatible (Ref:
-https://github.com/microsoft/pyright/issues/1264)
+<https://github.com/microsoft/pyright/issues/1264>)
 
 E.g:
 

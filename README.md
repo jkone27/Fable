@@ -9,17 +9,17 @@ Fable is a compiler that allows F# code to be compiled to multiple target langua
 ## Table of Contents
 
 - [Fable](#fable)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Getting started](#getting-started)
-  - [Building](#building)
-    - [Requirements](#requirements)
-      - [Use VSCode Dev Container](#use-vscode-dev-container)
-      - [Use your machine](#use-your-machine)
-    - [Build](#build)
-  - [Architecture](#architecture)
-  - [Contributing](#contributing)
-    - [List of changelogs](#list-of-changelogs)
+    - [Table of Contents](#table-of-contents)
+    - [Introduction](#introduction)
+    - [Getting started](#getting-started)
+    - [Building](#building)
+        - [Requirements](#requirements)
+            - [Use VSCode Dev Container](#use-vscode-dev-container)
+            - [Use your machine](#use-your-machine)
+        - [Build](#build)
+    - [Architecture](#architecture)
+    - [Contributing](#contributing)
+        - [List of changelogs](#list-of-changelogs)
 
 ## Introduction
 
