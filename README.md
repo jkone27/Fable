@@ -1,10 +1,29 @@
-# Fable: F# |> JS
+# Fable
 
 [![Nuget](https://img.shields.io/nuget/v/Fable.svg?maxAge=0&colorB=brightgreen)](https://www.nuget.org/packages/Fable) [![Build](https://github.com/fable-compiler/Fable/actions/workflows/build.yml/badge.svg)](https://github.com/fable-compiler/Fable/actions/workflows/build.yml) [![Join the chat at https://gitter.im/fable-compiler/Fable](https://badges.gitter.im/fable-compiler/Fable.svg)](https://gitter.im/fable-compiler/Fable?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [Follow us on Twitter!](https://twitter.com/FableCompiler)
 
-Fable is an F# to JavaScript compiler powered [FSharp Compiler Services](https://fsharp.github.io/fsharp-compiler-docs/fcs/), designed to make F# a first-class citizen of the JavaScript ecosystem. [Check the website](http://fable.io) for more information and if you find the project useful, don't forget to give us a star!
+Fable is a compiler that allows F# code to be compiled to multiple target languages, including JavaScript, Rust, Python, and more.
+
+## Table of Contents
+
+- [Fable](#fable)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Getting started](#getting-started)
+  - [Building](#building)
+    - [Requirements](#requirements)
+      - [Use VSCode Dev Container](#use-vscode-dev-container)
+      - [Use your machine](#use-your-machine)
+    - [Build](#build)
+  - [Architecture](#architecture)
+  - [Contributing](#contributing)
+    - [List of changelogs](#list-of-changelogs)
+
+## Introduction
+
+Fable is a dotnet tool that allows F# code to be compiled to multiple target languages, including JavaScript, Rust, Python, and more. compiler powered [FSharp Compiler Services](https://fsharp.github.io/fsharp-compiler-docs/fcs/), at first designed to make F# a first-class citizen of the JavaScript ecosystem, it evolved to support many other target languages. [Check the website](http://fable.io) for more information and if you find the project useful, don't forget to give us a star!
 
 > Fable actually uses a fork of FCS with a few tweaks. Binaries are in `lib/fcs` folder. See [this PR](https://github.com/ncave/fsharp/pull/2) for more info.
 
@@ -42,6 +61,10 @@ Run `./build.sh` or `./build.cmd` to see the build options.
 When using VSCode, you can also run the build tasks from the command palette (Ctrl+Shift+P) by typing `Run Task` and selecting the task you want to run.
 
 We also configured several debug configurations that you can use from the debug panel (Ctrl+Shift+D). This is useful as you can attach the debugger to the Fable compiler process to check what's going on.
+
+## Architecture
+
+For an in-depth look at Fable's architecture, including the Transformer, Printer, Pipeline, and Project Cracker components, please refer to the [Architecture Documentation](ARCHITECTURE.md).
 
 ## Contributing
 
